@@ -1,0 +1,82 @@
+body
+{
+background-color:#fff;
+color:#333;
+font-family:arial;
+}
+
+a
+{
+text-decoration:none;
+color:#000;
+}
+
+.bordure
+{
+border:1px solid #333;
+}
+
+table
+{
+border-spacing:0px;
+width:200px;
+height:200px;
+}
+
+#tableau
+{
+
+}
+
+#tab_menu
+{
+border-spacing:10px;
+width:800px;
+}
+
+
+/* emp�che la s�lection */
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*
+tr td
+{
+width:60px;
+height:60px;
+float:left;
+list-style:none;
+}
+*/
+
+
+/*
+tr
+{
+clear:both;
+}
+*/
+
+.annulation_float
+{
+clear:both;
+}
+
+.cadre
+{
+/*border:1px solid #333;*/
+width:480px;
+}
+
+.case-noire
+{
+	background-color:#454545;
+}
+
+.case-blanc {
+    background-color: #ffffff;
+}

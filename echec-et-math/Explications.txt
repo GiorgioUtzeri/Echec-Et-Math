@@ -1,0 +1,24 @@
+Bonjour et bienvenue sur le projet de NSI de Lucas Nathan et Giorgio
+
+ce projet a été réalisé pendant l'année de première en spécialité NSI avec environ 1h de cours de 
+ce projet par semaine ainsi que plusieurs heures d'autonomie chez nous de travail 
+
+Concernant les codes étant réalisés ils sont "index.html" directement dans le premier fichier 
+Et concernant la page du jeu il est situé dans le dossier "jouer" et ensuite le fichier "index.html"
+L'autre code que nous avons réalisé se situe dans le dossier js et comme fichier sous le nom de 
+"html.js" tous les autres fichiers ont étés réalisés aussi par nous en majeur partie mais aussi par
+des sites internets permettant la facilité pour coder des css de 32000 lignes cela nous évite donc
+de passer trop de temps sur ce css qui est donc fait automatiquement dans tous les autres fichiers
+il est de même pour les autres fichiers par forcément css comme js etc 
+
+Le jeu est accéssible à tous sous l'url "https://echec-et-math.space/" et tout le monde peut donc jouer
+
+Nous avons donc aussi configuré un hébergeur internet ainsi que passer plusieurs heures sur de la 
+configuration de serveur DNS pour permettre la redirection (tout cela coute de l'argent)
+
+Nous avons aussi créé un discord pour avoir une communauté avec plein de gens permettant d'avoir des avis
+et qu'on nous communique des bugs, cela permet donc aussi d'avoir de l'aide sur certain point 
+notamment sur l'aspect physique de tout le site. Lien :
+https://discord.gg/vdVxxeYvrz
+
+Voilà pour l'explication pour toutes informations en plus Lucas Nathan et Giorgio sont dispos.

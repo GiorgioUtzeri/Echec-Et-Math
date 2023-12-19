@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>Echec Et Math</title>
+
+    <link href="img/logo.png" rel="icon">
+    <link href="img/logo.png" rel="apple-touch-icon">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/clean-blog.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style-chess.css" rel="stylesheet">
+    <link href="./css/prism.css" rel="stylesheet" />
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <style>
+	 
+body { 
+	background-color: #333333;
+	/*background-color: rgba(68,64,64,255) } */
+	background: url(img/plateau3.jpg);
+	background-size: 100% 100%; 
+    padding-top: 0px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 700px;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.centre 
+{
+  margin: auto;
+  width: max-content;
+  padding: 0px;
+  /* border: 3px solid #73AD21; */
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="centre">
+				<table>
+					<tr>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-tour.png" /></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-cheval.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-fou.png"></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-dame.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-roi.png"></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-fou.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-cheval.png"></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-tour.png"/></td>
+					</tr>
+					<tr>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-pion.png"></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-pion.png"></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-pion.png"></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/noir-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/noir-pion.png"> </td>
+					</tr>
+
+					<tr>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+					</tr>
+					<tr>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+					</tr>
+					<tr>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+					</tr>
+					<tr>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/vide.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/vide.png"/></td>
+					</tr>
+					<tr>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-pion.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-pion.png"/></td>
+					</tr>
+					<tr>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-tour.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-cheval.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-fou.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-dame.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-roi.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-fou.png"/></td>
+						<td class="bordure case-noire" draggable="true"><img src="./img/blanc-cheval.png"/></td>
+						<td class="bordure case-blanc" draggable="true"><img src="./img/blanc-tour.png"/></td>
+					</tr>
+				</table>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./js/prism.js"></script>
+</body>
+
+</html>
